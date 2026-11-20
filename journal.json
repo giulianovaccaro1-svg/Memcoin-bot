@@ -29,5 +29,104 @@
       "trail_gap": 0.15
     },
     "lektion": "Trend hat gedreht"
+  },
+  {
+    "zeit": "2026-11-20T07:47:08.791399+00:00",
+    "symbol": "iAgent",
+    "addr": "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
+    "pnl": -1.4631,
+    "pnl_pct": -0.2926,
+    "reason": "Zeitlimit",
+    "held_min": 174.1,
+    "peak_pct": 0.0747,
+    "features": {
+      "liq": 114836.78,
+      "vol": 85723.73,
+      "chg": 24.17,
+      "ratio": 1.9968676585747847,
+      "age": 226.55460088297525,
+      "fdv": 2256951
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 30,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 150,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Kein Momentum (Ausstieg mit Minus)"
+  },
+  {
+    "zeit": "2026-11-20T07:47:08.847596+00:00",
+    "symbol": "OGTA",
+    "addr": "7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump",
+    "pnl": 0.5355,
+    "pnl_pct": 0.1071,
+    "reason": "Zeitlimit",
+    "held_min": 174.1,
+    "peak_pct": 0.2013,
+    "features": {
+      "liq": 52336.75,
+      "vol": 38653.6,
+      "chg": 14.33,
+      "ratio": 1.2374100719424461,
+      "age": 621.2134788167318,
+      "fdv": 482673
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 30,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 150,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Gewinn"
+  },
+  {
+    "zeit": "2026-11-20T07:47:08.896099+00:00",
+    "symbol": "apocry ",
+    "addr": "HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump",
+    "pnl": -2.9444,
+    "pnl_pct": -0.5889,
+    "reason": "Stop-Loss",
+    "held_min": 78.9,
+    "peak_pct": 0.0,
+    "features": {
+      "liq": 42087.16,
+      "vol": 403855.94,
+      "chg": 108,
+      "ratio": 1.462532981530343,
+      "age": 124.45745521647136,
+      "fdv": 199306
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 30,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 150,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Trend hat gedreht"
   }
 ]

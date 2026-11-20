@@ -1,55 +1,40 @@
 {
-  "cash": 32.670967741935485,
+  "cash": 33.79899316094019,
   "positions": [
     {
-      "addr": "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
-      "symbol": "iAgent",
-      "entry_price": 0.002263,
-      "tokens": 2121.0782147591694,
+      "addr": "8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump",
+      "symbol": "PATRICK",
+      "entry_price": 6.541e-05,
+      "tokens": 73383.27472863476,
       "cost": 5.0,
-      "opened": "2026-11-20T04:53:02.276032+00:00",
-      "peak": 0.002432,
+      "cost0": 5.0,
+      "opened": "2026-11-20T07:47:09.581341+00:00",
+      "peak": 6.541e-05,
       "features": {
-        "liq": 114836.78,
-        "vol": 85723.73,
-        "chg": 24.17,
-        "ratio": 1.9968676585747847,
-        "age": 226.55460088297525,
-        "fdv": 2256951
+        "liq": 17552.69,
+        "vol": 283721.84,
+        "chg": 103,
+        "ratio": 1.387590652699436,
+        "age": 50.826356034342446,
+        "fdv": 62898
       }
     },
     {
-      "addr": "7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump",
-      "symbol": "OGTA",
-      "entry_price": 0.0004849,
-      "tokens": 9898.948236749844,
+      "addr": "9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump",
+      "symbol": "enu",
+      "entry_price": 6.642e-05,
+      "tokens": 72267.38934056007,
       "cost": 5.0,
-      "opened": "2026-11-20T04:53:02.808708+00:00",
-      "peak": 0.0005604,
+      "cost0": 5.0,
+      "opened": "2026-11-20T07:47:10.919049+00:00",
+      "peak": 6.642e-05,
       "features": {
-        "liq": 52336.75,
-        "vol": 38653.6,
-        "chg": 14.33,
-        "ratio": 1.2374100719424461,
-        "age": 621.2134788167318,
-        "fdv": 482673
-      }
-    },
-    {
-      "addr": "HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump",
-      "symbol": "apocry ",
-      "entry_price": 0.0002124,
-      "tokens": 22598.870056497173,
-      "cost": 5.0,
-      "opened": "2026-11-20T06:28:17.447291+00:00",
-      "peak": 0.0002124,
-      "features": {
-        "liq": 42087.16,
-        "vol": 403855.94,
-        "chg": 108,
-        "ratio": 1.462532981530343,
-        "age": 124.45745521647136,
-        "fdv": 199306
+        "liq": 17374.58,
+        "vol": 20378,
+        "chg": 84.17,
+        "ratio": 1.2621359223300972,
+        "age": 233.1319845336914,
+        "fdv": 63741
       }
     }
   ],
@@ -57,10 +42,12 @@
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
     "7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump",
-    "HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump"
+    "HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump",
+    "8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump",
+    "9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump"
   ],
   "realized_by_day": {
-    "2026-11-20": -2.329032258064516
+    "2026-11-20": -6.20100683905981
   },
   "learn": {
     "last_idx": 0,
