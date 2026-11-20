@@ -44,7 +44,9 @@ ROLLBACK_TOLERANCE = 0.03      # wird der Schnitt um mehr als 3 %-Punkte schlech
 # Startwerte der anpassbaren Einstellungen (werden aus learned_params.json überschrieben)
 DEFAULT_P = {
     "stop_loss": -0.25,        # bei -25 % verkaufen
-    "take_profit": 0.60,       # bei +60 % verkaufen
+    "take_profit": 0.60,       # Rest bei +60 % verkaufen
+    "tp1": 0.30,               # Teilgewinn: bei +30 % wird ein Teil verkauft ...
+    "tp1_fraction": 0.5,       # ... und zwar die Hälfte der Position; danach Stop auf Einstand
     "min_liquidity": 15_000,
     "min_volume_h1": 20_000,
     "min_age_min": 30,
@@ -264,7 +266,7 @@ def open_position(state, pair):
     state["traded"].append(addr)
     state["positions"].append(
         {"addr": addr, "symbol": sym, "entry_price": price, "tokens": tokens,
-         "cost": size, "opened": now().isoformat(), "peak": price,
+         "cost": size, "cost0": size, "opened": now().isoformat(), "peak": price,
          "features": features(pair)}
     )
     log_trade([now().isoformat(), "KAUF", sym, addr, price, round(size, 2), "", "Strategie-Signal"])
@@ -284,23 +286,47 @@ def diagnose(t):
         return "Trend hat gedreht"
     if t["reason"] in ("Zeitlimit", "Trailing-Stop"):
         return "Kein Momentum (Ausstieg mit Minus)"
+    if t["reason"] == "Einstands-Stop":
+        return "Kein Momentum nach Teilgewinn (Rest knapp im Minus)"
     return "Sonstiges"
+
+
+def partial_sell(state, pos, price):
+    """Teilgewinn mitnehmen: verkauft einen Teil der Position, der Rest läuft weiter."""
+    frac = P["tp1_fraction"]
+    sold = pos["tokens"] * frac
+    value = sold * price * (1 - COST_PER_SIDE)
+    cost_part = pos["cost"] * frac
+    pnl = value - cost_part
+    pos["tokens"] -= sold
+    pos["cost"] -= cost_part
+    pos["realized_pnl"] = pos.get("realized_pnl", 0.0) + pnl
+    pos["tp1_done"] = True
+    state["cash"] += value
+    day = now().strftime("%Y-%m-%d")
+    state["realized_by_day"][day] = state["realized_by_day"].get(day, 0.0) + pnl
+    log_trade([now().isoformat(), "TEILVERKAUF", pos["symbol"], pos["addr"], price,
+               round(value, 2), round(pnl, 2), "Teilgewinn"])
+    telegram(f"💰 TEILGEWINN {pos['symbol']}: {frac*100:.0f} % verkauft, {pnl:+.2f} USD gesichert. "
+             f"Rest läuft mit Stop auf Einstand.")
 
 
 def close_position(state, pos, price, reason):
     value = pos["tokens"] * price * (1 - COST_PER_SIDE)
-    pnl = value - pos["cost"]
+    pnl_rest = value - pos["cost"]                 # nur der Rest der Position
+    pnl = pnl_rest + pos.get("realized_pnl", 0.0)  # plus bereits gesicherter Teilgewinn
+    cost0 = pos.get("cost0", pos["cost"])          # ursprünglicher Einsatz
     state["cash"] += value
     state["positions"].remove(pos)
     day = now().strftime("%Y-%m-%d")
-    state["realized_by_day"][day] = state["realized_by_day"].get(day, 0.0) + pnl
+    state["realized_by_day"][day] = state["realized_by_day"].get(day, 0.0) + pnl_rest
     log_trade([now().isoformat(), "VERKAUF", pos["symbol"], pos["addr"], price,
-               round(value, 2), round(pnl, 2), reason])
+               round(value, 2), round(pnl_rest, 2), reason])
 
     held = (now() - datetime.fromisoformat(pos["opened"])).total_seconds() / 60
     entry = {
         "zeit": now().isoformat(), "symbol": pos["symbol"], "addr": pos["addr"],
-        "pnl": round(pnl, 4), "pnl_pct": round(pnl / pos["cost"], 4), "reason": reason,
+        "pnl": round(pnl, 4), "pnl_pct": round(pnl / cost0, 4), "reason": reason,
         "held_min": round(held, 1),
         "peak_pct": round(pos.get("peak", pos["entry_price"]) / pos["entry_price"] - 1, 4),
         "features": pos.get("features", {}),
@@ -328,7 +354,13 @@ def check_positions(state):
         change = price / pos["entry_price"] - 1
         peak_change = pos["peak"] / pos["entry_price"] - 1
         held_min = (now() - datetime.fromisoformat(pos["opened"])).total_seconds() / 60
-        if change <= P["stop_loss"]:
+        if (not pos.get("tp1_done") and P["tp1"] and change >= P["tp1"]
+                and change < P["take_profit"]):
+            partial_sell(state, pos, price)   # Teilgewinn sichern, Rest läuft weiter
+            continue
+        if pos.get("tp1_done") and change <= 0:
+            close_position(state, pos, price, "Einstands-Stop")
+        elif not pos.get("tp1_done") and change <= P["stop_loss"]:
             close_position(state, pos, price, "Stop-Loss")
         elif change >= P["take_profit"]:
             close_position(state, pos, price, "Take-Profit")
