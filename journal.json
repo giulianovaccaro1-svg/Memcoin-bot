@@ -1,0 +1,33 @@
+[
+  {
+    "zeit": "2026-11-20T05:27:58.022740+00:00",
+    "symbol": "SWRDXSTFF",
+    "addr": "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
+    "pnl": -2.329,
+    "pnl_pct": -0.4658,
+    "reason": "Stop-Loss",
+    "held_min": 34.9,
+    "peak_pct": 0.0,
+    "features": {
+      "liq": 32671.17,
+      "vol": 662319.72,
+      "chg": 72.93,
+      "ratio": 1.371817383669886,
+      "age": 92.47402248535157,
+      "fdv": 191380
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 30,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 150,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Trend hat gedreht"
+  }
+]
