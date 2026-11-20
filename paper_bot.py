@@ -292,3 +292,194 @@ def close_position(state, pos, price, reason):
     pnl = value - pos["cost"]
     state["cash"] += value
     state["positions"].remove(pos)
+    day = now().strftime("%Y-%m-%d")
+    state["realized_by_day"][day] = state["realized_by_day"].get(day, 0.0) + pnl
+    log_trade([now().isoformat(), "VERKAUF", pos["symbol"], pos["addr"], price,
+               round(value, 2), round(pnl, 2), reason])
+
+    held = (now() - datetime.fromisoformat(pos["opened"])).total_seconds() / 60
+    entry = {
+        "zeit": now().isoformat(), "symbol": pos["symbol"], "addr": pos["addr"],
+        "pnl": round(pnl, 4), "pnl_pct": round(pnl / pos["cost"], 4), "reason": reason,
+        "held_min": round(held, 1),
+        "peak_pct": round(pos.get("peak", pos["entry_price"]) / pos["entry_price"] - 1, 4),
+        "features": pos.get("features", {}),
+        "params": dict(P),
+    }
+    entry["lektion"] = diagnose(entry)
+    journal = load_json(JOURNAL_FILE, [])
+    journal.append(entry)
+    save_json(JOURNAL_FILE, journal)
+
+    icon = "✅" if pnl >= 0 else "🔻"
+    telegram(f"{icon} PAPIER-VERKAUF {pos['symbol']} ({reason}): {pnl:+.2f} USD | "
+             f"Lektion: {entry['lektion']}")
+
+
+def check_positions(state):
+    prices = {}
+    for pos in list(state["positions"]):
+        pair = get_pair(pos["addr"])
+        if not pair or not pair.get("priceUsd"):
+            continue
+        price = float(pair["priceUsd"])
+        prices[pos["addr"]] = price
+        pos["peak"] = max(pos.get("peak", pos["entry_price"]), price)
+        change = price / pos["entry_price"] - 1
+        peak_change = pos["peak"] / pos["entry_price"] - 1
+        held_min = (now() - datetime.fromisoformat(pos["opened"])).total_seconds() / 60
+        if change <= P["stop_loss"]:
+            close_position(state, pos, price, "Stop-Loss")
+        elif change >= P["take_profit"]:
+            close_position(state, pos, price, "Take-Profit")
+        elif (P["trail_start"] and peak_change >= P["trail_start"]
+              and price <= pos["peak"] * (1 - P["trail_gap"])):
+            close_position(state, pos, price, "Trailing-Stop")
+        elif held_min >= MAX_HOLD_MIN:
+            close_position(state, pos, price, "Zeitlimit")
+    return prices
+
+
+# ---------- Lernen ----------
+def clamp(key, value):
+    lo, hi = BOUNDS[key]
+    return round(min(max(value, lo), hi), 2)
+
+
+def med(trades, feat):
+    vals = [t["features"].get(feat) for t in trades if t.get("features", {}).get(feat) is not None]
+    return median(vals) if vals else None
+
+
+def adapt(state):
+    journal = load_json(JOURNAL_FILE, [])
+    ln = state.setdefault("learn", {"last_idx": 0, "pending": None})
+    batch = journal[ln["last_idx"]:]
+    if len(batch) < LEARN_EVERY:
+        return
+    ln["last_idx"] = len(journal)
+    batch_avg = mean(t["pnl_pct"] for t in batch)
+
+    # 1) Letzte Anpassung prüfen: war sie schlecht, wird sie zurückgenommen
+    pending = ln.get("pending")
+    if pending:
+        ln["pending"] = None
+        if batch_avg < pending["prev_avg"] - ROLLBACK_TOLERANCE:
+            P.clear()
+            P.update(pending["prev_params"])
+            save_params()
+            learn_log(f"ZURÜCKGESETZT: letzte Anpassung half nicht (Schnitt pro Trade "
+                      f"{batch_avg*100:+.1f} % statt vorher {pending['prev_avg']*100:+.1f} %). "
+                      f"Alte Einstellungen sind wieder aktiv.")
+            return
+        learn_log(f"Letzte Anpassung behalten (Schnitt pro Trade {batch_avg*100:+.1f} % "
+                  f"statt vorher {pending['prev_avg']*100:+.1f} %).")
+
+    # 2) Gewinner und Verlierer vergleichen
+    wins = [t for t in batch if t["pnl"] > 0]
+    losses = [t for t in batch if t["pnl"] <= 0]
+    gründe = {}
+    for t in losses:
+        gründe[t["lektion"]] = gründe.get(t["lektion"], 0) + 1
+    top = ", ".join(f"{k} ({v}x)" for k, v in sorted(gründe.items(), key=lambda x: -x[1])[:3])
+    learn_log(f"Auswertung {len(batch)} Trades: {len(wins)} Gewinner, {len(losses)} Verlierer, "
+              f"Schnitt {batch_avg*100:+.1f} % pro Trade. Häufigste Fehler: {top or '-'}")
+    if len(wins) < MIN_GROUP or len(losses) < MIN_GROUP:
+        learn_log("Zu wenig Gewinner oder Verlierer für eine sinnvolle Anpassung. Keine Änderung.")
+        return
+
+    candidates = []  # (Stärke, Einstellung, neuer Wert, Begründung)
+
+    def higher_is_better(key, feat, label):
+        mw, ml = med(wins, feat), med(losses, feat)
+        if mw and ml is not None and ml < 0.85 * mw:
+            strength = mw / ml if ml > 0 else 3
+            new = clamp(key, P[key] * (1 + STEP))
+            candidates.append((strength, key, new,
+                               f"Verlierer hatten {label} ~{ml:.2f}, Gewinner ~{mw:.2f}"))
+
+    higher_is_better("min_liquidity", "liq", "Liquidität")
+    higher_is_better("min_volume_h1", "vol", "Volumen")
+    higher_is_better("min_buy_sell_ratio", "ratio", "Käufer/Verkäufer")
+    higher_is_better("min_age_min", "age", "Alter (Min)")
+    higher_is_better("min_change_h1", "chg", "Kursplus 1h")
+
+    mw, ml = med(wins, "chg"), med(losses, "chg")
+    if mw and ml is not None and ml > 1.15 * mw:
+        candidates.append((ml / mw, "max_change_h1", clamp("max_change_h1", P["max_change_h1"] * (1 - STEP)),
+                           f"Verlierer hatten schon Kursplus 1h ~{ml:.0f} %, Gewinner ~{mw:.0f} %"))
+
+    late = [t for t in losses if t["peak_pct"] >= 0.30]
+    if len(late) / len(losses) >= 0.3 and not P["trail_start"]:
+        candidates.append((3, "trail_start", 0.30,
+                           f"{len(late)} von {len(losses)} Verlierern waren vorher schon bei +30 % oder mehr"))
+
+    candidates = [c for c in candidates if c[2] != P.get(c[1])]
+    if not candidates:
+        learn_log("Keine Anpassung nötig.")
+        return
+    candidates.sort(key=lambda c: -c[0])
+    prev = dict(P)
+    for _, key, new, why in candidates[:MAX_CHANGES_PER_ROUND]:
+        old = P[key]
+        P[key] = new
+        learn_log(f"ANPASSUNG {key}: {old} -> {new} ({why})")
+    save_params()
+    ln["pending"] = {"prev_params": prev, "prev_avg": batch_avg}
+
+
+def scan_for_entries(state):
+    ok, why = can_open(state)
+    if not ok:
+        print(f"[info] keine neuen Käufe: {why}")
+        return
+    for addr in get_candidates():
+        if addr in state["traded"] or any(p["addr"] == addr for p in state["positions"]):
+            continue
+        pair = get_pair(addr)
+        if not pair:
+            continue
+        good, _ = passes_filters(pair)
+        if not good:
+            continue
+        safe, why = rug_ok(addr)
+        if not safe:
+            print(f"[skip] {pair['baseToken'].get('symbol')}: {why}")
+            continue
+        open_position(state, pair)
+        ok, _ = can_open(state)
+        if not ok:
+            break
+
+
+def print_summary(state, prices):
+    eq = equity(state, prices)
+    print(f"[{now().strftime('%H:%M:%S')}] Wert: ${eq:.2f} (Start ${START_BUDGET_USD:.2f}) | "
+          f"offen: {len(state['positions'])} | realisiert heute: {realized_today(state):+.2f}")
+
+
+def run_cycle(state):
+    prices = check_positions(state)
+    adapt(state)
+    scan_for_entries(state)
+    save_state(state)
+    print_summary(state, prices)
+
+
+def main():
+    state = load_state()
+    if "--once" in sys.argv:
+        run_cycle(state)  # z. B. für GitHub Actions: kein Start-Spam alle 5 Minuten
+        return
+    telegram(f"🤖 Papier-Bot gestartet. Fake-Budget: ${START_BUDGET_USD:.2f}")
+    try:
+        while True:
+            run_cycle(state)
+            time.sleep(SCAN_INTERVAL_SEC)
+    except KeyboardInterrupt:
+        save_state(state)
+        print("Bot beendet.")
+
+
+if __name__ == "__main__":
+    main()
