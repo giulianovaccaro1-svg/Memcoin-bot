@@ -1,0 +1,66 @@
+{
+  "cash": 35.0,
+  "positions": [
+    {
+      "addr": "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
+      "symbol": "SWRDXSTFF",
+      "entry_price": 0.0001984,
+      "tokens": 24193.548387096773,
+      "cost": 5.0,
+      "opened": "2026-11-20T04:53:01.441329+00:00",
+      "peak": 0.0001984,
+      "features": {
+        "liq": 32671.17,
+        "vol": 662319.72,
+        "chg": 72.93,
+        "ratio": 1.371817383669886,
+        "age": 92.47402248535157,
+        "fdv": 191380
+      }
+    },
+    {
+      "addr": "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
+      "symbol": "iAgent",
+      "entry_price": 0.002263,
+      "tokens": 2121.0782147591694,
+      "cost": 5.0,
+      "opened": "2026-11-20T04:53:02.276032+00:00",
+      "peak": 0.002263,
+      "features": {
+        "liq": 114836.78,
+        "vol": 85723.73,
+        "chg": 24.17,
+        "ratio": 1.9968676585747847,
+        "age": 226.55460088297525,
+        "fdv": 2256951
+      }
+    },
+    {
+      "addr": "7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump",
+      "symbol": "OGTA",
+      "entry_price": 0.0004849,
+      "tokens": 9898.948236749844,
+      "cost": 5.0,
+      "opened": "2026-11-20T04:53:02.808708+00:00",
+      "peak": 0.0004849,
+      "features": {
+        "liq": 52336.75,
+        "vol": 38653.6,
+        "chg": 14.33,
+        "ratio": 1.2374100719424461,
+        "age": 621.2134788167318,
+        "fdv": 482673
+      }
+    }
+  ],
+  "traded": [
+    "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
+    "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
+    "7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump"
+  ],
+  "realized_by_day": {},
+  "learn": {
+    "last_idx": 0,
+    "pending": null
+  }
+}
