@@ -1,24 +1,6 @@
 {
-  "cash": 33.79899316094019,
+  "cash": 34.800058441478335,
   "positions": [
-    {
-      "addr": "8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump",
-      "symbol": "PATRICK",
-      "entry_price": 6.541e-05,
-      "tokens": 73383.27472863476,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-20T07:47:09.581341+00:00",
-      "peak": 6.541e-05,
-      "features": {
-        "liq": 17552.69,
-        "vol": 283721.84,
-        "chg": 103,
-        "ratio": 1.387590652699436,
-        "age": 50.826356034342446,
-        "fdv": 62898
-      }
-    },
     {
       "addr": "9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump",
       "symbol": "enu",
@@ -27,7 +9,7 @@
       "cost": 5.0,
       "cost0": 5.0,
       "opened": "2026-11-20T07:47:10.919049+00:00",
-      "peak": 6.642e-05,
+      "peak": 7.592e-05,
       "features": {
         "liq": 17374.58,
         "vol": 20378,
@@ -47,7 +29,7 @@
     "9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump"
   ],
   "realized_by_day": {
-    "2026-11-20": -6.20100683905981
+    "2026-11-20": -10.199941558521665
   },
   "learn": {
     "last_idx": 0,
