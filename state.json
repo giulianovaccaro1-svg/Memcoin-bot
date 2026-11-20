@@ -1,5 +1,5 @@
 {
-  "cash": 37.670967741935485,
+  "cash": 32.670967741935485,
   "positions": [
     {
       "addr": "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -8,7 +8,7 @@
       "tokens": 2121.0782147591694,
       "cost": 5.0,
       "opened": "2026-11-20T04:53:02.276032+00:00",
-      "peak": 0.002263,
+      "peak": 0.002432,
       "features": {
         "liq": 114836.78,
         "vol": 85723.73,
@@ -25,7 +25,7 @@
       "tokens": 9898.948236749844,
       "cost": 5.0,
       "opened": "2026-11-20T04:53:02.808708+00:00",
-      "peak": 0.0004918,
+      "peak": 0.0005604,
       "features": {
         "liq": 52336.75,
         "vol": 38653.6,
@@ -34,12 +34,30 @@
         "age": 621.2134788167318,
         "fdv": 482673
       }
+    },
+    {
+      "addr": "HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump",
+      "symbol": "apocry ",
+      "entry_price": 0.0002124,
+      "tokens": 22598.870056497173,
+      "cost": 5.0,
+      "opened": "2026-11-20T06:28:17.447291+00:00",
+      "peak": 0.0002124,
+      "features": {
+        "liq": 42087.16,
+        "vol": 403855.94,
+        "chg": 108,
+        "ratio": 1.462532981530343,
+        "age": 124.45745521647136,
+        "fdv": 199306
+      }
     }
   ],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
-    "7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump"
+    "7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump",
+    "HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump"
   ],
   "realized_by_day": {
     "2026-11-20": -2.329032258064516
