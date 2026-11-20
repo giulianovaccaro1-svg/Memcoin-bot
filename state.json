@@ -1,25 +1,6 @@
 {
-  "cash": 34.800058441478335,
-  "positions": [
-    {
-      "addr": "9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump",
-      "symbol": "enu",
-      "entry_price": 6.642e-05,
-      "tokens": 72267.38934056007,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-20T07:47:10.919049+00:00",
-      "peak": 7.592e-05,
-      "features": {
-        "liq": 17374.58,
-        "vol": 20378,
-        "chg": 84.17,
-        "ratio": 1.2621359223300972,
-        "age": 233.1319845336914,
-        "fdv": 63741
-      }
-    }
-  ],
+  "cash": 39.603006950963426,
+  "positions": [],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -29,7 +10,7 @@
     "9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump"
   ],
   "realized_by_day": {
-    "2026-11-20": -10.199941558521665
+    "2026-11-20": -10.39699304903657
   },
   "learn": {
     "last_idx": 0,

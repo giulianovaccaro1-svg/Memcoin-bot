@@ -161,5 +161,38 @@
       "trail_gap": 0.15
     },
     "lektion": "Trend hat gedreht"
+  },
+  {
+    "zeit": "2026-11-20T10:37:06.825790+00:00",
+    "symbol": "enu",
+    "addr": "9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump",
+    "pnl": -0.1971,
+    "pnl_pct": -0.0394,
+    "reason": "Zeitlimit",
+    "held_min": 169.9,
+    "peak_pct": 0.143,
+    "features": {
+      "liq": 17374.58,
+      "vol": 20378,
+      "chg": 84.17,
+      "ratio": 1.2621359223300972,
+      "age": 233.1319845336914,
+      "fdv": 63741
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 30,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 150,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Kein Momentum (Ausstieg mit Minus)"
   }
 ]
