@@ -293,5 +293,38 @@
       "trail_gap": 0.15
     },
     "lektion": "Trend hat gedreht"
+  },
+  {
+    "zeit": "2026-11-21T06:12:31.045656+00:00",
+    "symbol": "VAREXON",
+    "addr": "FQNz7BKQejsQR3aFyCY746Km2smesUS9DWYsU9nopump",
+    "pnl": 4.9841,
+    "pnl_pct": 0.9968,
+    "reason": "Take-Profit",
+    "held_min": 53.5,
+    "peak_pct": 1.1667,
+    "features": {
+      "liq": 17760.22,
+      "vol": 188319.59,
+      "chg": 146,
+      "ratio": 1.204813700532284,
+      "age": 63.019610986328125,
+      "fdv": 70148
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 30,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 150,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Gewinn"
   }
 ]

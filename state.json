@@ -1,25 +1,6 @@
 {
-  "cash": 35.02987051231037,
-  "positions": [
-    {
-      "addr": "FQNz7BKQejsQR3aFyCY746Km2smesUS9DWYsU9nopump",
-      "symbol": "VAREXON",
-      "entry_price": 7.283e-05,
-      "tokens": 65906.9064945764,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-21T05:19:01.176638+00:00",
-      "peak": 7.283e-05,
-      "features": {
-        "liq": 17760.22,
-        "vol": 188319.59,
-        "chg": 146,
-        "ratio": 1.204813700532284,
-        "age": 63.019610986328125,
-        "fdv": 70148
-      }
-    }
-  ],
+  "cash": 45.01397596336076,
+  "positions": [],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -34,7 +15,7 @@
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
-    "2026-11-21": 0.42686356134693293
+    "2026-11-21": 5.41096901239732
   },
   "learn": {
     "last_idx": 0,
