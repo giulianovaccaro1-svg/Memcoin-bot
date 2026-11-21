@@ -359,5 +359,38 @@
       "trail_gap": 0.15
     },
     "lektion": "Trend hat gedreht"
+  },
+  {
+    "zeit": "2026-11-21T09:51:38.183587+00:00",
+    "symbol": "MAYA",
+    "addr": "FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump",
+    "pnl": 0.1184,
+    "pnl_pct": 0.0237,
+    "reason": "Zeitlimit",
+    "held_min": 154.2,
+    "peak_pct": 0.1108,
+    "features": {
+      "liq": 117485.12,
+      "vol": 75029.76,
+      "chg": 16.78,
+      "ratio": 1.6313470013412532,
+      "age": 129.8644415161133,
+      "fdv": 2788936
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 30,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 150,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Gewinn"
   }
 ]

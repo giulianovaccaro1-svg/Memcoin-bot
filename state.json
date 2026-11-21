@@ -1,25 +1,6 @@
 {
-  "cash": 38.08152874732512,
-  "positions": [
-    {
-      "addr": "FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump",
-      "symbol": "MAYA",
-      "entry_price": 0.002799,
-      "tokens": 1714.898177920686,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-21T07:17:25.866423+00:00",
-      "peak": 0.003065,
-      "features": {
-        "liq": 117485.12,
-        "vol": 75029.76,
-        "chg": 16.78,
-        "ratio": 1.6313470013412532,
-        "age": 129.8644415161133,
-        "fdv": 2788936
-      }
-    }
-  ],
+  "cash": 43.19988244507432,
+  "positions": [],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -36,7 +17,7 @@
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
-    "2026-11-21": 3.4785217963616852
+    "2026-11-21": 3.5968754941108814
   },
   "learn": {
     "last_idx": 0,
