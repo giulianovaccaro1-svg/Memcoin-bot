@@ -1,13 +1,33 @@
 {
-  "cash": 39.603006950963426,
-  "positions": [],
+  "cash": 34.603006950963426,
+  "positions": [
+    {
+      "addr": "4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu",
+      "symbol": "SBS",
+      "entry_price": 0.000105,
+      "tokens": 45714.28571428571,
+      "cost": 5.0,
+      "cost0": 5.0,
+      "opened": "2026-11-21T01:54:35.297063+00:00",
+      "peak": 0.000105,
+      "features": {
+        "liq": 24093.34,
+        "vol": 86717.03,
+        "chg": 16.68,
+        "ratio": 1.3443037974683545,
+        "age": 125.60495139973958,
+        "fdv": 105058
+      }
+    }
+  ],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
     "7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump",
     "HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump",
     "8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump",
-    "9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump"
+    "9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump",
+    "4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu"
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657
