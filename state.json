@@ -1,6 +1,25 @@
 {
-  "cash": 32.47166578317169,
-  "positions": [],
+  "cash": 27.471665783171687,
+  "positions": [
+    {
+      "addr": "zcRvzm7gAfYGde8gRwaSYxNryL47SjLVUQLAf1bdoor",
+      "symbol": "SIDOOR",
+      "entry_price": 0.0002461,
+      "tokens": 19504.266558309628,
+      "cost": 5.0,
+      "cost0": 5.0,
+      "opened": "2026-11-21T22:01:56.089622+00:00",
+      "peak": 0.0002461,
+      "features": {
+        "liq": 37975.31,
+        "vol": 437617.92,
+        "chg": 92.62,
+        "ratio": 1.423043351760256,
+        "age": 75.45149401855468,
+        "fdv": 246195
+      }
+    }
+  ],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -20,7 +39,8 @@
     "dkpuQdjegjU8zcwYrBzYrLW11wvtjwonBsQhjLApump",
     "3b7WvfRxRaoMuq4j6JWJzrL5mym3Km3QzfX5dqCopump",
     "Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump",
-    "51TUkCJcBPi5fj9gZgjnXh6Ny5RSiEbrxUBoikDLpump"
+    "51TUkCJcBPi5fj9gZgjnXh6Ny5RSiEbrxUBoikDLpump",
+    "zcRvzm7gAfYGde8gRwaSYxNryL47SjLVUQLAf1bdoor"
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
