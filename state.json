@@ -1,25 +1,6 @@
 {
-  "cash": 30.818520649420975,
-  "positions": [
-    {
-      "addr": "51TUkCJcBPi5fj9gZgjnXh6Ny5RSiEbrxUBoikDLpump",
-      "symbol": "ILY",
-      "entry_price": 5.271e-05,
-      "tokens": 91064.31417188389,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-21T20:10:15.851955+00:00",
-      "peak": 5.271e-05,
-      "features": {
-        "liq": 15212.3,
-        "vol": 112730.89,
-        "chg": 69.92,
-        "ratio": 1.4335719968178202,
-        "age": 75.99753288574219,
-        "fdv": 50228
-      }
-    }
-  ],
+  "cash": 32.47166578317169,
+  "positions": [],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -43,7 +24,7 @@
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
-    "2026-11-21": -3.784486301542472
+    "2026-11-21": -7.131341167791761
   },
   "learn": {
     "last_idx": 15,
