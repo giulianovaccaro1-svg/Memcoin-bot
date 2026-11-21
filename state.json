@@ -1,5 +1,5 @@
 {
-  "cash": 38.19988244507432,
+  "cash": 33.19988244507432,
   "positions": [
     {
       "addr": "BjnxH6a3D6HQz1LRPsGX5TZmW3GwstpexSNrK2utpump",
@@ -9,7 +9,7 @@
       "cost": 5.0,
       "cost0": 5.0,
       "opened": "2026-11-21T11:19:13.981024+00:00",
-      "peak": 0.0002107,
+      "peak": 0.0002289,
       "features": {
         "liq": 40182.86,
         "vol": 513236.6,
@@ -17,6 +17,24 @@
         "ratio": 1.4266666666666667,
         "age": 98.54968400065104,
         "fdv": 203088
+      }
+    },
+    {
+      "addr": "2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump",
+      "symbol": "PUNANI",
+      "entry_price": 0.002307,
+      "tokens": 2080.624187256177,
+      "cost": 5.0,
+      "cost0": 5.0,
+      "opened": "2026-11-21T12:00:47.026210+00:00",
+      "peak": 0.002307,
+      "features": {
+        "liq": 109204.19,
+        "vol": 314619.93,
+        "chg": 13.92,
+        "ratio": 2.5758783049619702,
+        "age": 454.36710388183593,
+        "fdv": 2296747
       }
     }
   ],
@@ -33,7 +51,8 @@
     "FQNz7BKQejsQR3aFyCY746Km2smesUS9DWYsU9nopump",
     "2GiS8L6jzveE7cQ61bjGN6wVn5MS9FcBjarSAMFppump",
     "FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump",
-    "BjnxH6a3D6HQz1LRPsGX5TZmW3GwstpexSNrK2utpump"
+    "BjnxH6a3D6HQz1LRPsGX5TZmW3GwstpexSNrK2utpump",
+    "2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump"
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
