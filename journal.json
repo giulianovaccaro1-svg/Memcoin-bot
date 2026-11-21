@@ -491,5 +491,38 @@
       "trail_gap": 0.15
     },
     "lektion": "Trend hat gedreht"
+  },
+  {
+    "zeit": "2026-11-21T15:57:33.799051+00:00",
+    "symbol": "RIEMANN",
+    "addr": "dkpuQdjegjU8zcwYrBzYrLW11wvtjwonBsQhjLApump",
+    "pnl": -1.8298,
+    "pnl_pct": -0.366,
+    "reason": "Stop-Loss",
+    "held_min": 41.8,
+    "peak_pct": 0.0,
+    "features": {
+      "liq": 63607.71,
+      "vol": 50871.38,
+      "chg": 40.24,
+      "ratio": 1.5026178010471205,
+      "age": 676.0681647176107,
+      "fdv": 786617
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 33.0,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 135.0,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Trend hat gedreht"
   }
 ]
