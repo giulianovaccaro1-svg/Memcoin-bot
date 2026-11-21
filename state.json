@@ -1,6 +1,25 @@
 {
-  "cash": 35.234712130195355,
-  "positions": [],
+  "cash": 30.234712130195355,
+  "positions": [
+    {
+      "addr": "dkpuQdjegjU8zcwYrBzYrLW11wvtjwonBsQhjLApump",
+      "symbol": "RIEMANN",
+      "entry_price": 0.0007961,
+      "tokens": 6029.393292299962,
+      "cost": 5.0,
+      "cost0": 5.0,
+      "opened": "2026-11-21T15:15:44.089859+00:00",
+      "peak": 0.0007961,
+      "features": {
+        "liq": 63607.71,
+        "vol": 50871.38,
+        "chg": 40.24,
+        "ratio": 1.5026178010471205,
+        "age": 676.0681647176107,
+        "fdv": 786617
+      }
+    }
+  ],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -16,7 +35,8 @@
     "FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump",
     "BjnxH6a3D6HQz1LRPsGX5TZmW3GwstpexSNrK2utpump",
     "2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump",
-    "8LiYzFsD2WySHR26ZAZdZkYZHgEvjdE9SrSfchhwpump"
+    "8LiYzFsD2WySHR26ZAZdZkYZHgEvjdE9SrSfchhwpump",
+    "dkpuQdjegjU8zcwYrBzYrLW11wvtjwonBsQhjLApump"
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
