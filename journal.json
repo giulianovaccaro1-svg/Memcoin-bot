@@ -227,5 +227,71 @@
       "trail_gap": 0.15
     },
     "lektion": "Gewinn"
+  },
+  {
+    "zeit": "2026-11-21T05:19:00.493368+00:00",
+    "symbol": "JENSEN",
+    "addr": "DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump",
+    "pnl": -2.6241,
+    "pnl_pct": -0.5248,
+    "reason": "Stop-Loss",
+    "held_min": 160.1,
+    "peak_pct": 0.0,
+    "features": {
+      "liq": 100182.29,
+      "vol": 67543.41,
+      "chg": 11.28,
+      "ratio": 1.9182127981825066,
+      "age": 157.4993333658854,
+      "fdv": 1903399
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 30,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 150,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Trend hat gedreht"
+  },
+  {
+    "zeit": "2026-11-21T05:19:00.523886+00:00",
+    "symbol": "PENNY",
+    "addr": "8fWsV1u1SYcN358tSA6dyTjfpmaQTziftcHwKBFSpump",
+    "pnl": -2.2446,
+    "pnl_pct": -0.4489,
+    "reason": "Stop-Loss",
+    "held_min": 56.8,
+    "peak_pct": 0.0,
+    "features": {
+      "liq": 34000.66,
+      "vol": 497370.17,
+      "chg": 90.46,
+      "ratio": 1.509647495361781,
+      "age": 49.76469756673177,
+      "fdv": 118564
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 30,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 150,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Trend hat gedreht"
   }
 ]
