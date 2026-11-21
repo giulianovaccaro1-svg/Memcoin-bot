@@ -1,6 +1,43 @@
 {
-  "cash": 45.01397596336076,
-  "positions": [],
+  "cash": 35.01397596336076,
+  "positions": [
+    {
+      "addr": "2GiS8L6jzveE7cQ61bjGN6wVn5MS9FcBjarSAMFppump",
+      "symbol": "SI",
+      "entry_price": 0.000449,
+      "tokens": 10690.423162583518,
+      "cost": 5.0,
+      "cost0": 5.0,
+      "opened": "2026-11-21T07:17:25.287477+00:00",
+      "peak": 0.000449,
+      "features": {
+        "liq": 46020.06,
+        "vol": 113005.45,
+        "chg": 104,
+        "ratio": 1.4120947630922693,
+        "age": 106.43812501627605,
+        "fdv": 442075
+      }
+    },
+    {
+      "addr": "FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump",
+      "symbol": "MAYA",
+      "entry_price": 0.002799,
+      "tokens": 1714.898177920686,
+      "cost": 5.0,
+      "cost0": 5.0,
+      "opened": "2026-11-21T07:17:25.866423+00:00",
+      "peak": 0.002799,
+      "features": {
+        "liq": 117485.12,
+        "vol": 75029.76,
+        "chg": 16.78,
+        "ratio": 1.6313470013412532,
+        "age": 129.8644415161133,
+        "fdv": 2788936
+      }
+    }
+  ],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -11,7 +48,9 @@
     "4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu",
     "DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump",
     "8fWsV1u1SYcN358tSA6dyTjfpmaQTziftcHwKBFSpump",
-    "FQNz7BKQejsQR3aFyCY746Km2smesUS9DWYsU9nopump"
+    "FQNz7BKQejsQR3aFyCY746Km2smesUS9DWYsU9nopump",
+    "2GiS8L6jzveE7cQ61bjGN6wVn5MS9FcBjarSAMFppump",
+    "FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump"
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
