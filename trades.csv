@@ -32,3 +32,4 @@ zeit,aktion,symbol,adresse,preis,usd,pnl_usd,grund
 2026-11-21T15:15:44.089892+00:00,KAUF,RIEMANN,dkpuQdjegjU8zcwYrBzYrLW11wvtjwonBsQhjLApump,0.0007961,5.0,,Strategie-Signal
 2026-11-21T15:57:33.798931+00:00,VERKAUF,RIEMANN,dkpuQdjegjU8zcwYrBzYrLW11wvtjwonBsQhjLApump,0.0005477,3.17,-1.83,Stop-Loss
 2026-11-21T15:57:34.418531+00:00,KAUF,Bigfoot,3b7WvfRxRaoMuq4j6JWJzrL5mym3Km3QzfX5dqCopump,0.000106,5.0,,Strategie-Signal
+2026-11-21T16:36:26.950213+00:00,TEILVERKAUF,Bigfoot,3b7WvfRxRaoMuq4j6JWJzrL5mym3Km3QzfX5dqCopump,0.0001576,3.43,0.93,Teilgewinn
