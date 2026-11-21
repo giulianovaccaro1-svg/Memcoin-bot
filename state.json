@@ -1,43 +1,6 @@
 {
-  "cash": 31.06703384516924,
-  "positions": [
-    {
-      "addr": "2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump",
-      "symbol": "PUNANI",
-      "entry_price": 0.002307,
-      "tokens": 2080.624187256177,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-21T12:00:47.026210+00:00",
-      "peak": 0.002307,
-      "features": {
-        "liq": 109204.19,
-        "vol": 314619.93,
-        "chg": 13.92,
-        "ratio": 2.5758783049619702,
-        "age": 454.36710388183593,
-        "fdv": 2296747
-      }
-    },
-    {
-      "addr": "8LiYzFsD2WySHR26ZAZdZkYZHgEvjdE9SrSfchhwpump",
-      "symbol": "DPRK",
-      "entry_price": 5.738e-05,
-      "tokens": 83652.84071104914,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-21T13:44:05.202196+00:00",
-      "peak": 5.738e-05,
-      "features": {
-        "liq": 15781.72,
-        "vol": 39353.68,
-        "chg": 104,
-        "ratio": 1.2261682242990655,
-        "age": 38.68670349934896,
-        "fdv": 55206
-      }
-    }
-  ],
+  "cash": 35.234712130195355,
+  "positions": [],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -57,10 +20,26 @@
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
-    "2026-11-21": 1.4640268942058028
+    "2026-11-21": -4.368294820768083
   },
   "learn": {
-    "last_idx": 0,
-    "pending": null
+    "last_idx": 15,
+    "pending": {
+      "prev_params": {
+        "stop_loss": -0.25,
+        "take_profit": 0.6,
+        "tp1": 0.3,
+        "tp1_fraction": 0.5,
+        "min_liquidity": 15000,
+        "min_volume_h1": 20000,
+        "min_age_min": 30,
+        "min_buy_sell_ratio": 1.2,
+        "min_change_h1": 10,
+        "max_change_h1": 150,
+        "trail_start": 0.0,
+        "trail_gap": 0.15
+      },
+      "prev_avg": -0.19686666666666666
+    }
   }
 }

@@ -425,5 +425,71 @@
       "trail_gap": 0.15
     },
     "lektion": "Trend hat gedreht"
+  },
+  {
+    "zeit": "2026-11-21T14:30:10.453024+00:00",
+    "symbol": "PUNANI",
+    "addr": "2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump",
+    "pnl": -1.0012,
+    "pnl_pct": -0.2002,
+    "reason": "Zeitlimit",
+    "held_min": 149.4,
+    "peak_pct": 0.0,
+    "features": {
+      "liq": 109204.19,
+      "vol": 314619.93,
+      "chg": 13.92,
+      "ratio": 2.5758783049619702,
+      "age": 454.36710388183593,
+      "fdv": 2296747
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 30,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 150,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Kein Momentum (Ausstieg mit Minus)"
+  },
+  {
+    "zeit": "2026-11-21T14:30:10.484769+00:00",
+    "symbol": "DPRK",
+    "addr": "8LiYzFsD2WySHR26ZAZdZkYZHgEvjdE9SrSfchhwpump",
+    "pnl": -4.8311,
+    "pnl_pct": -0.9662,
+    "reason": "Stop-Loss",
+    "held_min": 46.1,
+    "peak_pct": 0.0,
+    "features": {
+      "liq": 15781.72,
+      "vol": 39353.68,
+      "chg": 104,
+      "ratio": 1.2261682242990655,
+      "age": 38.68670349934896,
+      "fdv": 55206
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 30,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 150,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Trend hat gedreht"
   }
 ]
