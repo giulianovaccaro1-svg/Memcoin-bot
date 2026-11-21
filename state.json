@@ -1,25 +1,6 @@
 {
-  "cash": 31.160269831536567,
-  "positions": [
-    {
-      "addr": "Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump",
-      "symbol": "NOHR",
-      "entry_price": 0.001834,
-      "tokens": 2617.2300981461285,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-21T17:21:25.554416+00:00",
-      "peak": 0.002118,
-      "features": {
-        "liq": 97863.94,
-        "vol": 169755.27,
-        "chg": 38.07,
-        "ratio": 1.7116788321167884,
-        "age": 121.15924056803385,
-        "fdv": 1817266
-      }
-    }
-  ],
+  "cash": 35.818520649420975,
+  "positions": [],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -42,7 +23,7 @@
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
-    "2026-11-21": -3.4427371194268765
+    "2026-11-21": -3.784486301542472
   },
   "learn": {
     "last_idx": 15,
