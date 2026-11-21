@@ -1,24 +1,6 @@
 {
-  "cash": 35.01397596336076,
+  "cash": 38.08152874732512,
   "positions": [
-    {
-      "addr": "2GiS8L6jzveE7cQ61bjGN6wVn5MS9FcBjarSAMFppump",
-      "symbol": "SI",
-      "entry_price": 0.000449,
-      "tokens": 10690.423162583518,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-21T07:17:25.287477+00:00",
-      "peak": 0.000449,
-      "features": {
-        "liq": 46020.06,
-        "vol": 113005.45,
-        "chg": 104,
-        "ratio": 1.4120947630922693,
-        "age": 106.43812501627605,
-        "fdv": 442075
-      }
-    },
     {
       "addr": "FJKt1LxbWBpTRt9BaDEB6Wr2qL5LZzjFF5sx8rXnpump",
       "symbol": "MAYA",
@@ -54,7 +36,7 @@
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
-    "2026-11-21": 5.41096901239732
+    "2026-11-21": 3.4785217963616852
   },
   "learn": {
     "last_idx": 0,
