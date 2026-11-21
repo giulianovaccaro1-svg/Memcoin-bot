@@ -1,22 +1,22 @@
 {
-  "cash": 34.603006950963426,
+  "cash": 39.898595522392,
   "positions": [
     {
-      "addr": "4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu",
-      "symbol": "SBS",
-      "entry_price": 0.000105,
-      "tokens": 45714.28571428571,
+      "addr": "DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump",
+      "symbol": "JENSEN",
+      "entry_price": 0.00191,
+      "tokens": 2513.089005235602,
       "cost": 5.0,
       "cost0": 5.0,
-      "opened": "2026-11-21T01:54:35.297063+00:00",
-      "peak": 0.000105,
+      "opened": "2026-11-21T02:38:55.959981+00:00",
+      "peak": 0.00191,
       "features": {
-        "liq": 24093.34,
-        "vol": 86717.03,
-        "chg": 16.68,
-        "ratio": 1.3443037974683545,
-        "age": 125.60495139973958,
-        "fdv": 105058
+        "liq": 100182.29,
+        "vol": 67543.41,
+        "chg": 11.28,
+        "ratio": 1.9182127981825066,
+        "age": 157.4993333658854,
+        "fdv": 1903399
       }
     }
   ],
@@ -27,10 +27,12 @@
     "HVxXzEt87QszpC95kMKAfrHdboj4K1TVxYNMzwmbpump",
     "8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump",
     "9msLfYfXBrSbrApCZAPuPMCNmPqNtEL1VPKh1AEYpump",
-    "4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu"
+    "4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu",
+    "DkHsZ1kjd2Fua8sgKE6PhHhyCdXYscbDVN7mAfiGpump"
   ],
   "realized_by_day": {
-    "2026-11-20": -10.39699304903657
+    "2026-11-20": -10.39699304903657,
+    "2026-11-21": 5.295588571428571
   },
   "learn": {
     "last_idx": 0,
