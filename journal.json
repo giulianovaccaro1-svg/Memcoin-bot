@@ -623,5 +623,71 @@
       "trail_gap": 0.15
     },
     "lektion": "Trend hat gedreht"
+  },
+  {
+    "zeit": "2026-11-21T23:17:24.584605+00:00",
+    "symbol": "SIDOOR",
+    "addr": "zcRvzm7gAfYGde8gRwaSYxNryL47SjLVUQLAf1bdoor",
+    "pnl": 2.1966,
+    "pnl_pct": 0.4393,
+    "reason": "Take-Profit",
+    "held_min": 75.5,
+    "peak_pct": 0.6611,
+    "features": {
+      "liq": 37975.31,
+      "vol": 437617.92,
+      "chg": 92.62,
+      "ratio": 1.423043351760256,
+      "age": 75.45149401855468,
+      "fdv": 246195
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 33.0,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 135.0,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Gewinn"
+  },
+  {
+    "zeit": "2026-11-21T23:17:24.602941+00:00",
+    "symbol": "URANUS",
+    "addr": "DUvFjnaE3r46WLbz9rz6MNk2bq9xPFPUfMd8bDgmpump",
+    "pnl": -1.9687,
+    "pnl_pct": -0.3937,
+    "reason": "Stop-Loss",
+    "held_min": 39.0,
+    "peak_pct": 0.0,
+    "features": {
+      "liq": 21438.76,
+      "vol": 67790.99,
+      "chg": 45.65,
+      "ratio": 1.3333333333333333,
+      "age": 117.7106100016276,
+      "fdv": 60446
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 33.0,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 135.0,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Trend hat gedreht"
   }
 ]

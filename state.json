@@ -1,45 +1,6 @@
 {
-  "cash": 25.841066839652793,
-  "positions": [
-    {
-      "addr": "zcRvzm7gAfYGde8gRwaSYxNryL47SjLVUQLAf1bdoor",
-      "symbol": "SIDOOR",
-      "entry_price": 0.0002461,
-      "tokens": 9752.133279154814,
-      "cost": 2.5,
-      "cost0": 5.0,
-      "opened": "2026-11-21T22:01:56.089622+00:00",
-      "peak": 0.0003599,
-      "features": {
-        "liq": 37975.31,
-        "vol": 437617.92,
-        "chg": 92.62,
-        "ratio": 1.423043351760256,
-        "age": 75.45149401855468,
-        "fdv": 246195
-      },
-      "realized_pnl": 0.869401056481105,
-      "tp1_done": true
-    },
-    {
-      "addr": "DUvFjnaE3r46WLbz9rz6MNk2bq9xPFPUfMd8bDgmpump",
-      "symbol": "URANUS",
-      "entry_price": 6.266e-05,
-      "tokens": 76603.89403127992,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-21T22:38:23.636584+00:00",
-      "peak": 6.266e-05,
-      "features": {
-        "liq": 21438.76,
-        "vol": 67790.99,
-        "chg": 45.65,
-        "ratio": 1.3333333333333333,
-        "age": 117.7106100016276,
-        "fdv": 60446
-      }
-    }
-  ],
+  "cash": 32.69958005228113,
+  "positions": [],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -65,7 +26,7 @@
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
-    "2026-11-21": -6.261940111310656
+    "2026-11-21": -6.903426898682323
   },
   "learn": {
     "last_idx": 15,
