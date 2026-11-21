@@ -1,25 +1,23 @@
 {
-  "cash": 31.830488699461092,
+  "cash": 31.160269831536567,
   "positions": [
     {
-      "addr": "3b7WvfRxRaoMuq4j6JWJzrL5mym3Km3QzfX5dqCopump",
-      "symbol": "Bigfoot",
-      "entry_price": 0.000106,
-      "tokens": 22641.509433962263,
-      "cost": 2.5,
+      "addr": "Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump",
+      "symbol": "NOHR",
+      "entry_price": 0.001834,
+      "tokens": 2617.2300981461285,
+      "cost": 5.0,
       "cost0": 5.0,
-      "opened": "2026-11-21T15:57:34.418504+00:00",
-      "peak": 0.0001576,
+      "opened": "2026-11-21T17:21:25.554416+00:00",
+      "peak": 0.001834,
       "features": {
-        "liq": 23465.07,
-        "vol": 92000.54,
-        "chg": 43.7,
-        "ratio": 1.350584307178631,
-        "age": 127.77364205322266,
-        "fdv": 102522
-      },
-      "realized_pnl": 0.9255698113207544,
-      "tp1_done": true
+        "liq": 97863.94,
+        "vol": 169755.27,
+        "chg": 38.07,
+        "ratio": 1.7116788321167884,
+        "age": 121.15924056803385,
+        "fdv": 1817266
+      }
     }
   ],
   "traded": [
@@ -39,11 +37,12 @@
     "2TngN4B7XaoGSKsYvttq5bFAdM4Z4xCSnuyRwGiFpump",
     "8LiYzFsD2WySHR26ZAZdZkYZHgEvjdE9SrSfchhwpump",
     "dkpuQdjegjU8zcwYrBzYrLW11wvtjwonBsQhjLApump",
-    "3b7WvfRxRaoMuq4j6JWJzrL5mym3Km3QzfX5dqCopump"
+    "3b7WvfRxRaoMuq4j6JWJzrL5mym3Km3QzfX5dqCopump",
+    "Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump"
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
-    "2026-11-21": -5.272518251502348
+    "2026-11-21": -3.4427371194268765
   },
   "learn": {
     "last_idx": 15,
