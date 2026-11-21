@@ -392,5 +392,38 @@
       "trail_gap": 0.15
     },
     "lektion": "Gewinn"
+  },
+  {
+    "zeit": "2026-11-21T13:44:04.304775+00:00",
+    "symbol": "XV",
+    "addr": "BjnxH6a3D6HQz1LRPsGX5TZmW3GwstpexSNrK2utpump",
+    "pnl": -2.1328,
+    "pnl_pct": -0.4266,
+    "reason": "Stop-Loss",
+    "held_min": 144.8,
+    "peak_pct": 0.0864,
+    "features": {
+      "liq": 40182.86,
+      "vol": 513236.6,
+      "chg": 50.99,
+      "ratio": 1.4266666666666667,
+      "age": 98.54968400065104,
+      "fdv": 203088
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 30,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 150,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Trend hat gedreht"
   }
 ]
