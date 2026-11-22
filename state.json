@@ -1,6 +1,25 @@
 {
-  "cash": 30.360181837076716,
-  "positions": [],
+  "cash": 25.360181837076716,
+  "positions": [
+    {
+      "addr": "3pGmCpDCr2B6cZFhFJFtLrcMCadMvjV4dB9UGJyNpump",
+      "symbol": "testicles",
+      "entry_price": 5.83e-05,
+      "tokens": 82332.76157804459,
+      "cost": 5.0,
+      "cost0": 5.0,
+      "opened": "2026-11-22T12:43:23.811238+00:00",
+      "peak": 5.83e-05,
+      "features": {
+        "liq": 15932,
+        "vol": 102618.49,
+        "chg": 97.21,
+        "ratio": 1.3888888888888888,
+        "age": 57.830187650553384,
+        "fdv": 56384
+      }
+    }
+  ],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -32,7 +51,8 @@
     "3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump",
     "6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump",
     "5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump",
-    "95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump"
+    "95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump",
+    "3pGmCpDCr2B6cZFhFJFtLrcMCadMvjV4dB9UGJyNpump"
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
