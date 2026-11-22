@@ -1,25 +1,41 @@
 {
-  "cash": 26.63076084951026,
+  "cash": 19.23005968794743,
   "positions": [
     {
-      "addr": "G74SSWk4qF4BeWfyR53fVZYqdNWo9wH7UR55jF4uuxds",
-      "symbol": "MANEKI",
-      "entry_price": 7.576e-05,
-      "tokens": 31678.986272439277,
-      "cost": 2.5,
+      "addr": "B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump",
+      "symbol": "GRAUDIA",
+      "entry_price": 0.0001452,
+      "tokens": 33057.85123966942,
+      "cost": 5.0,
       "cost0": 5.0,
-      "opened": "2026-11-22T00:26:19.532876+00:00",
-      "peak": 0.0001152,
+      "opened": "2026-11-22T02:33:47.973267+00:00",
+      "peak": 0.0001452,
       "features": {
-        "liq": 18388.73,
-        "vol": 48080.58,
-        "chg": 94.16,
-        "ratio": 1.8236658932714618,
-        "age": 64.52554825032551,
-        "fdv": 73447
-      },
-      "realized_pnl": 1.0034424498416046,
-      "tp1_done": true
+        "liq": 26035.81,
+        "vol": 62373.63,
+        "chg": 43.67,
+        "ratio": 1.962171052631579,
+        "age": 105.66622143147787,
+        "fdv": 143320
+      }
+    },
+    {
+      "addr": "82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump",
+      "symbol": "STREETS",
+      "entry_price": 0.000736,
+      "tokens": 6521.739130434782,
+      "cost": 5.0,
+      "cost0": 5.0,
+      "opened": "2026-11-22T02:33:48.354449+00:00",
+      "peak": 0.000736,
+      "features": {
+        "liq": 61930.22,
+        "vol": 34295.4,
+        "chg": 22.94,
+        "ratio": 1.8886263921700979,
+        "age": 126.28924114990234,
+        "fdv": 734248
+      }
     }
   ],
   "traded": [
@@ -46,12 +62,14 @@
     "DUvFjnaE3r46WLbz9rz6MNk2bq9xPFPUfMd8bDgmpump",
     "G74SSWk4qF4BeWfyR53fVZYqdNWo9wH7UR55jF4uuxds",
     "9kaQR3dorDz4vwim3iGaoRa9amoLcUHPp6wuLHpEpump",
-    "9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump"
+    "9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump",
+    "B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump",
+    "82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump"
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
     "2026-11-21": -6.903426898682323,
-    "2026-11-22": -3.5688192027708676
+    "2026-11-22": -3.469520364333698
   },
   "learn": {
     "last_idx": 15,
