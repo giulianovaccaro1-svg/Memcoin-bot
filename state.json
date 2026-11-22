@@ -1,44 +1,6 @@
 {
-  "cash": 17.249696051583793,
+  "cash": 22.660955268256448,
   "positions": [
-    {
-      "addr": "B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump",
-      "symbol": "GRAUDIA",
-      "entry_price": 0.0001452,
-      "tokens": 16528.92561983471,
-      "cost": 2.5,
-      "cost0": 5.0,
-      "opened": "2026-11-22T02:33:47.973267+00:00",
-      "peak": 0.0001903,
-      "features": {
-        "liq": 26035.81,
-        "vol": 62373.63,
-        "chg": 43.67,
-        "ratio": 1.962171052631579,
-        "age": 105.66622143147787,
-        "fdv": 143320
-      },
-      "realized_pnl": 0.519636363636363,
-      "tp1_done": true
-    },
-    {
-      "addr": "82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump",
-      "symbol": "STREETS",
-      "entry_price": 0.000736,
-      "tokens": 6521.739130434782,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-22T02:33:48.354449+00:00",
-      "peak": 0.000736,
-      "features": {
-        "liq": 61930.22,
-        "vol": 34295.4,
-        "chg": 22.94,
-        "ratio": 1.8886263921700979,
-        "age": 126.28924114990234,
-        "fdv": 734248
-      }
-    },
     {
       "addr": "3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump",
       "symbol": "PushCoin",
@@ -90,7 +52,7 @@
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
     "2026-11-21": -6.903426898682323,
-    "2026-11-22": -2.949884000697335
+    "2026-11-22": -5.03862478402468
   },
   "learn": {
     "last_idx": 15,
