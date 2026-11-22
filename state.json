@@ -1,6 +1,61 @@
 {
-  "cash": 32.69958005228113,
-  "positions": [],
+  "cash": 17.699580052281128,
+  "positions": [
+    {
+      "addr": "G74SSWk4qF4BeWfyR53fVZYqdNWo9wH7UR55jF4uuxds",
+      "symbol": "MANEKI",
+      "entry_price": 7.576e-05,
+      "tokens": 63357.972544878554,
+      "cost": 5.0,
+      "cost0": 5.0,
+      "opened": "2026-11-22T00:26:19.532876+00:00",
+      "peak": 7.576e-05,
+      "features": {
+        "liq": 18388.73,
+        "vol": 48080.58,
+        "chg": 94.16,
+        "ratio": 1.8236658932714618,
+        "age": 64.52554825032551,
+        "fdv": 73447
+      }
+    },
+    {
+      "addr": "9kaQR3dorDz4vwim3iGaoRa9amoLcUHPp6wuLHpEpump",
+      "symbol": "KAREN",
+      "entry_price": 5.277e-05,
+      "tokens": 90960.77316657192,
+      "cost": 5.0,
+      "cost0": 5.0,
+      "opened": "2026-11-22T00:26:20.009972+00:00",
+      "peak": 5.277e-05,
+      "features": {
+        "liq": 15444.06,
+        "vol": 204128.87,
+        "chg": 87.42,
+        "ratio": 1.3129110418830046,
+        "age": 44.55016649983724,
+        "fdv": 50503
+      }
+    },
+    {
+      "addr": "9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump",
+      "symbol": "Mfer",
+      "entry_price": 4.665e-05,
+      "tokens": 102893.89067524114,
+      "cost": 5.0,
+      "cost0": 5.0,
+      "opened": "2026-11-22T00:26:21.239578+00:00",
+      "peak": 4.665e-05,
+      "features": {
+        "liq": 15439.87,
+        "vol": 34213.36,
+        "chg": 29.15,
+        "ratio": 1.367117117117117,
+        "age": 149.07065989990235,
+        "fdv": 45367
+      }
+    }
+  ],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -22,7 +77,10 @@
     "Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump",
     "51TUkCJcBPi5fj9gZgjnXh6Ny5RSiEbrxUBoikDLpump",
     "zcRvzm7gAfYGde8gRwaSYxNryL47SjLVUQLAf1bdoor",
-    "DUvFjnaE3r46WLbz9rz6MNk2bq9xPFPUfMd8bDgmpump"
+    "DUvFjnaE3r46WLbz9rz6MNk2bq9xPFPUfMd8bDgmpump",
+    "G74SSWk4qF4BeWfyR53fVZYqdNWo9wH7UR55jF4uuxds",
+    "9kaQR3dorDz4vwim3iGaoRa9amoLcUHPp6wuLHpEpump",
+    "9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump"
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
