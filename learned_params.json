@@ -4,10 +4,10 @@
   "tp1": 0.3,
   "tp1_fraction": 0.5,
   "min_liquidity": 15000,
-  "min_volume_h1": 20000,
+  "min_volume_h1": 22000.0,
   "min_age_min": 33.0,
   "min_buy_sell_ratio": 1.2,
-  "min_change_h1": 10,
+  "min_change_h1": 11.0,
   "max_change_h1": 135.0,
   "trail_start": 0.0,
   "trail_gap": 0.15

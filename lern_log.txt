@@ -1,3 +1,7 @@
 [2026-11-21 14:30] Auswertung 15 Trades: 4 Gewinner, 11 Verlierer, Schnitt -19.7 % pro Trade. Häufigste Fehler: Trend hat gedreht (8x), Kein Momentum (Ausstieg mit Minus) (3x)
 [2026-11-21 14:30] ANPASSUNG max_change_h1: 150 -> 135.0 (Verlierer hatten schon Kursplus 1h ~84 %, Gewinner ~17 %)
 [2026-11-21 14:30] ANPASSUNG min_age_min: 30 -> 33.0 (Verlierer hatten Alter (Min) ~106.44, Gewinner ~127.73)
+[2026-11-22 11:18] Letzte Anpassung behalten (Schnitt pro Trade -9.7 % statt vorher -19.7 %).
+[2026-11-22 11:18] Auswertung 15 Trades: 5 Gewinner, 10 Verlierer, Schnitt -9.7 % pro Trade. Häufigste Fehler: Trend hat gedreht (8x), Kein Momentum (Ausstieg mit Minus) (2x)
+[2026-11-22 11:18] ANPASSUNG min_change_h1: 10 -> 11.0 (Verlierer hatten Kursplus 1h ~42.95, Gewinner ~92.62)
+[2026-11-22 11:18] ANPASSUNG min_volume_h1: 20000 -> 22000.0 (Verlierer hatten Volumen ~60318.20, Gewinner ~92000.54)

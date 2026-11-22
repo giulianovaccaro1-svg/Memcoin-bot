@@ -953,5 +953,38 @@
       "trail_gap": 0.15
     },
     "lektion": "Trend hat gedreht"
+  },
+  {
+    "zeit": "2026-11-22T11:18:56.092660+00:00",
+    "symbol": "FIREBALL",
+    "addr": "5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump",
+    "pnl": -2.2788,
+    "pnl_pct": -0.4558,
+    "reason": "Stop-Loss",
+    "held_min": 87.1,
+    "peak_pct": 0.0683,
+    "features": {
+      "liq": 15753.89,
+      "vol": 52845.41,
+      "chg": 73.55,
+      "ratio": 1.586490939044481,
+      "age": 143.15867526448568,
+      "fdv": 53516
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 33.0,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 135.0,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Trend hat gedreht"
   }
 ]

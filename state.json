@@ -1,24 +1,6 @@
 {
-  "cash": 20.239577737542596,
+  "cash": 22.960729782282197,
   "positions": [
-    {
-      "addr": "5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump",
-      "symbol": "FIREBALL",
-      "entry_price": 5.722e-05,
-      "tokens": 83886.75288360713,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-22T09:51:50.520497+00:00",
-      "peak": 6.113e-05,
-      "features": {
-        "liq": 15753.89,
-        "vol": 52845.41,
-        "chg": 73.55,
-        "ratio": 1.586490939044481,
-        "age": 143.15867526448568,
-        "fdv": 53516
-      }
-    },
     {
       "addr": "95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump",
       "symbol": "HIPPO",
@@ -27,7 +9,7 @@
       "cost": 5.0,
       "cost0": 5.0,
       "opened": "2026-11-22T10:33:56.121784+00:00",
-      "peak": 6.57e-05,
+      "peak": 7.811e-05,
       "features": {
         "liq": 17248.34,
         "vol": 241697.52,
@@ -74,10 +56,10 @@
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
     "2026-11-21": -6.903426898682323,
-    "2026-11-22": -2.46000231473853
+    "2026-11-22": -4.738850269998929
   },
   "learn": {
-    "last_idx": 15,
+    "last_idx": 30,
     "pending": {
       "prev_params": {
         "stop_loss": -0.25,
@@ -86,14 +68,14 @@
         "tp1_fraction": 0.5,
         "min_liquidity": 15000,
         "min_volume_h1": 20000,
-        "min_age_min": 30,
+        "min_age_min": 33.0,
         "min_buy_sell_ratio": 1.2,
         "min_change_h1": 10,
-        "max_change_h1": 150,
+        "max_change_h1": 135.0,
         "trail_start": 0.0,
         "trail_gap": 0.15
       },
-      "prev_avg": -0.19686666666666666
+      "prev_avg": -0.09699333333333333
     }
   }
 }
