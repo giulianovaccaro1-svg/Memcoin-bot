@@ -1,25 +1,6 @@
 {
-  "cash": 22.960729782282197,
-  "positions": [
-    {
-      "addr": "95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump",
-      "symbol": "HIPPO",
-      "entry_price": 6.57e-05,
-      "tokens": 73059.3607305936,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-22T10:33:56.121784+00:00",
-      "peak": 7.811e-05,
-      "features": {
-        "liq": 17248.34,
-        "vol": 241697.52,
-        "chg": 130,
-        "ratio": 1.3772398616787174,
-        "age": 36.78536345214844,
-        "fdv": 62309
-      }
-    }
-  ],
+  "cash": 30.360181837076716,
+  "positions": [],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -56,7 +37,7 @@
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
     "2026-11-21": -6.903426898682323,
-    "2026-11-22": -4.738850269998929
+    "2026-11-22": -2.339398215204409
   },
   "learn": {
     "last_idx": 30,
