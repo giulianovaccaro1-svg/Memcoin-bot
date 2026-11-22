@@ -1,25 +1,6 @@
 {
-  "cash": 26.793093325072572,
-  "positions": [
-    {
-      "addr": "6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump",
-      "symbol": "CORONA",
-      "entry_price": 7.506e-05,
-      "tokens": 63948.84092725819,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-22T08:23:51.557993+00:00",
-      "peak": 7.506e-05,
-      "features": {
-        "liq": 18591.79,
-        "vol": 24956.59,
-        "chg": 33.69,
-        "ratio": 1.5185185185185186,
-        "age": 177.39263371582032,
-        "fdv": 73081
-      }
-    }
-  ],
+  "cash": 30.239577737542596,
+  "positions": [],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -54,7 +35,7 @@
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
     "2026-11-21": -6.903426898682323,
-    "2026-11-22": -0.9064867272085539
+    "2026-11-22": -2.46000231473853
   },
   "learn": {
     "last_idx": 15,

@@ -60,3 +60,4 @@ zeit,aktion,symbol,adresse,preis,usd,pnl_usd,grund
 2026-11-22T06:14:01.957656+00:00,KAUF,snowball,3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump,7.226e-05,5.0,,Strategie-Signal
 2026-11-22T07:23:16.618210+00:00,VERKAUF,snowball,3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump,0.000147,9.37,4.37,Take-Profit
 2026-11-22T08:23:51.558034+00:00,KAUF,CORONA,6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump,7.506e-05,5.0,,Strategie-Signal
+2026-11-22T09:08:48.861135+00:00,VERKAUF,CORONA,6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump,5.614e-05,3.45,-1.55,Stop-Loss
