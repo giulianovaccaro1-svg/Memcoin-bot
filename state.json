@@ -1,25 +1,6 @@
 {
-  "cash": 22.41894441834686,
-  "positions": [
-    {
-      "addr": "3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump",
-      "symbol": "snowball",
-      "entry_price": 7.226e-05,
-      "tokens": 66426.79213949626,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-22T06:14:01.957639+00:00",
-      "peak": 7.226e-05,
-      "features": {
-        "liq": 18609.98,
-        "vol": 306800.79,
-        "chg": 129,
-        "ratio": 1.3960852043753598,
-        "age": 98.54929416503906,
-        "fdv": 69075
-      }
-    }
-  ],
+  "cash": 31.793093325072572,
+  "positions": [],
   "traded": [
     "Csoj9XHJfBAxsKswqKKBENnGeoRDHtACfyYi7HmJpump",
     "44DZsPNJUtUyTkELAFYdwCpe82sEt12HZKrMgK1Spump",
@@ -53,7 +34,7 @@
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
     "2026-11-21": -6.903426898682323,
-    "2026-11-22": -5.280635633934265
+    "2026-11-22": -0.9064867272085539
   },
   "learn": {
     "last_idx": 15,

@@ -887,5 +887,38 @@
       "trail_gap": 0.15
     },
     "lektion": "Kein Momentum (Ausstieg mit Minus)"
+  },
+  {
+    "zeit": "2026-11-22T07:23:16.618331+00:00",
+    "symbol": "snowball",
+    "addr": "3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump",
+    "pnl": 4.3741,
+    "pnl_pct": 0.8748,
+    "reason": "Take-Profit",
+    "held_min": 69.2,
+    "peak_pct": 1.0343,
+    "features": {
+      "liq": 18609.98,
+      "vol": 306800.79,
+      "chg": 129,
+      "ratio": 1.3960852043753598,
+      "age": 98.54929416503906,
+      "fdv": 69075
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 33.0,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 135.0,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Gewinn"
   }
 ]

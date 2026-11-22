@@ -58,3 +58,4 @@ zeit,aktion,symbol,adresse,preis,usd,pnl_usd,grund
 2026-11-22T05:18:46.431777+00:00,VERKAUF,STREETS,82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump,0.0005001,3.13,-1.87,Stop-Loss
 2026-11-22T06:14:01.455250+00:00,VERKAUF,PushCoin,3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump,0.001713,4.76,-0.24,Zeitlimit
 2026-11-22T06:14:01.957656+00:00,KAUF,snowball,3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump,7.226e-05,5.0,,Strategie-Signal
+2026-11-22T07:23:16.618210+00:00,VERKAUF,snowball,3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump,0.000147,9.37,4.37,Take-Profit
