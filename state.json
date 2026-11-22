@@ -1,22 +1,22 @@
 {
-  "cash": 22.660955268256448,
+  "cash": 22.41894441834686,
   "positions": [
     {
-      "addr": "3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump",
-      "symbol": "PushCoin",
-      "entry_price": 0.001659,
-      "tokens": 2893.3092224231464,
+      "addr": "3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump",
+      "symbol": "snowball",
+      "entry_price": 7.226e-05,
+      "tokens": 66426.79213949626,
       "cost": 5.0,
       "cost0": 5.0,
-      "opened": "2026-11-22T03:23:42.552061+00:00",
-      "peak": 0.001659,
+      "opened": "2026-11-22T06:14:01.957639+00:00",
+      "peak": 7.226e-05,
       "features": {
-        "liq": 90823.3,
-        "vol": 242849.19,
-        "chg": 47.28,
-        "ratio": 1.4332252358490567,
-        "age": 88.49253466389973,
-        "fdv": 1651439
+        "liq": 18609.98,
+        "vol": 306800.79,
+        "chg": 129,
+        "ratio": 1.3960852043753598,
+        "age": 98.54929416503906,
+        "fdv": 69075
       }
     }
   ],
@@ -47,12 +47,13 @@
     "9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump",
     "B1oGtkaVAVZkdtWV7SXrHnFkcWC1Kd45sYpy6RYTpump",
     "82mseLFauphc2yutbaDGgViahquJ1jGVLpyof99xpump",
-    "3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump"
+    "3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump",
+    "3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump"
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
     "2026-11-21": -6.903426898682323,
-    "2026-11-22": -5.03862478402468
+    "2026-11-22": -5.280635633934265
   },
   "learn": {
     "last_idx": 15,

@@ -854,5 +854,38 @@
       "trail_gap": 0.15
     },
     "lektion": "Trend hat gedreht"
+  },
+  {
+    "zeit": "2026-11-22T06:14:01.455322+00:00",
+    "symbol": "PushCoin",
+    "addr": "3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump",
+    "pnl": -0.242,
+    "pnl_pct": -0.0484,
+    "reason": "Zeitlimit",
+    "held_min": 170.3,
+    "peak_pct": 0.0325,
+    "features": {
+      "liq": 90823.3,
+      "vol": 242849.19,
+      "chg": 47.28,
+      "ratio": 1.4332252358490567,
+      "age": 88.49253466389973,
+      "fdv": 1651439
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 33.0,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 135.0,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Kein Momentum (Ausstieg mit Minus)"
   }
 ]
