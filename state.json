@@ -1,5 +1,5 @@
 {
-  "cash": 25.239577737542596,
+  "cash": 20.239577737542596,
   "positions": [
     {
       "addr": "5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump",
@@ -9,7 +9,7 @@
       "cost": 5.0,
       "cost0": 5.0,
       "opened": "2026-11-22T09:51:50.520497+00:00",
-      "peak": 5.722e-05,
+      "peak": 6.113e-05,
       "features": {
         "liq": 15753.89,
         "vol": 52845.41,
@@ -17,6 +17,24 @@
         "ratio": 1.586490939044481,
         "age": 143.15867526448568,
         "fdv": 53516
+      }
+    },
+    {
+      "addr": "95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump",
+      "symbol": "HIPPO",
+      "entry_price": 6.57e-05,
+      "tokens": 73059.3607305936,
+      "cost": 5.0,
+      "cost0": 5.0,
+      "opened": "2026-11-22T10:33:56.121784+00:00",
+      "peak": 6.57e-05,
+      "features": {
+        "liq": 17248.34,
+        "vol": 241697.52,
+        "chg": 130,
+        "ratio": 1.3772398616787174,
+        "age": 36.78536345214844,
+        "fdv": 62309
       }
     }
   ],
@@ -50,7 +68,8 @@
     "3N6Mp8YQuVDfEtyuyJS72s4MRrgQuKY34gvYZD5Kpump",
     "3D7YQcnXi6RMjWxheiE8VLuGXJTtgQkmyugGYvzjpump",
     "6fVQAutGBLpyYJRiekVjSjvKidsmgZx14bKV5HSSpump",
-    "5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump"
+    "5o7AFuoNWsy7gQS85ospXhWFJRnxDwTtwTR3JF2Jpump",
+    "95NAbTyZopHGJK9TuisJZUHKAZSqRoSB3JPfqAqHpump"
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
