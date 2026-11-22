@@ -66,11 +66,20 @@ BOUNDS = {
     "max_change_h1": (40, 200),
 }
 
-STATE_FILE = "state.json"
-TRADES_FILE = "trades.csv"
-JOURNAL_FILE = "journal.json"
-PARAMS_FILE = "learned_params.json"
-LEARN_LOG_FILE = "lern_log.txt"
+# Dauerbetrieb (z. B. Railway): Spielstand liegt in DATA_DIR (dort ein dauerhaftes Laufwerk einhängen).
+# Ohne DATA_DIR bleibt alles im Programmordner wie bisher.
+DATA_DIR = os.environ.get("DATA_DIR", ".")
+APP_DIR = os.path.dirname(os.path.abspath(__file__))
+os.makedirs(DATA_DIR, exist_ok=True)
+
+STATE_FILE = os.path.join(DATA_DIR, "state.json")
+TRADES_FILE = os.path.join(DATA_DIR, "trades.csv")
+JOURNAL_FILE = os.path.join(DATA_DIR, "journal.json")
+PARAMS_FILE = os.path.join(DATA_DIR, "learned_params.json")
+LEARN_LOG_FILE = os.path.join(DATA_DIR, "lern_log.txt")
+STOP_FILE = os.path.join(DATA_DIR, "STOP")
+
+SCAN_EVERY_N_CYCLES = 5        # Dauerbetrieb: offene Trades jede Minute prüfen, neue Coins nur alle 5 Minuten suchen
 
 DEX = "https://api.dexscreener.com"
 RUGCHECK = "https://api.rugcheck.xyz/v1/tokens/{}/report/summary"
@@ -127,6 +136,19 @@ def load_params():
     return p
 
 
+def seed_data():
+    """Beim ersten Start auf einem neuen Laufwerk den bisherigen Spielstand aus dem Programmordner übernehmen."""
+    if os.path.abspath(DATA_DIR) == APP_DIR:
+        return
+    for name in ("state.json", "trades.csv", "journal.json", "learned_params.json", "lern_log.txt"):
+        src, dst = os.path.join(APP_DIR, name), os.path.join(DATA_DIR, name)
+        if os.path.exists(src) and not os.path.exists(dst):
+            with open(src, "rb") as fi, open(dst, "wb") as fo:
+                fo.write(fi.read())
+            print(f"[info] {name} aus dem Programmordner übernommen")
+
+
+seed_data()
 P = load_params()
 
 
@@ -245,8 +267,8 @@ def realized_today(state):
 
 
 def can_open(state):
-    if os.path.exists("STOP"):
-        return False, "Notaus (STOP-Datei)"
+    if os.environ.get("BOT_STOP") == "1" or os.path.exists(STOP_FILE):
+        return False, "Notaus (BOT_STOP=1 oder STOP-Datei)"
     if len(state["positions"]) >= MAX_OPEN_POSITIONS:
         return False, "max. Positionen erreicht"
     if realized_today(state) <= -DAILY_LOSS_LIMIT_PCT * START_BUDGET_USD:
@@ -490,10 +512,11 @@ def print_summary(state, prices):
           f"offen: {len(state['positions'])} | realisiert heute: {realized_today(state):+.2f}")
 
 
-def run_cycle(state):
+def run_cycle(state, scan=True):
     prices = check_positions(state)
     adapt(state)
-    scan_for_entries(state)
+    if scan:
+        scan_for_entries(state)
     save_state(state)
     print_summary(state, prices)
 
@@ -505,8 +528,13 @@ def main():
         return
     telegram(f"🤖 Papier-Bot gestartet. Fake-Budget: ${START_BUDGET_USD:.2f}")
     try:
+        n = 0
         while True:
-            run_cycle(state)
+            try:
+                run_cycle(state, scan=(n % SCAN_EVERY_N_CYCLES == 0))
+            except Exception as e:  # ein Fehler darf den Dauerbetrieb nicht beenden
+                print(f"[fehler] Durchlauf fehlgeschlagen: {e!r}")
+            n += 1
             time.sleep(SCAN_INTERVAL_SEC)
     except KeyboardInterrupt:
         save_state(state)
