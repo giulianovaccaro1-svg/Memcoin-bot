@@ -689,5 +689,71 @@
       "trail_gap": 0.15
     },
     "lektion": "Trend hat gedreht"
+  },
+  {
+    "zeit": "2026-11-22T01:40:27.975396+00:00",
+    "symbol": "KAREN",
+    "addr": "9kaQR3dorDz4vwim3iGaoRa9amoLcUHPp6wuLHpEpump",
+    "pnl": -2.5445,
+    "pnl_pct": -0.5089,
+    "reason": "Stop-Loss",
+    "held_min": 74.1,
+    "peak_pct": 0.0,
+    "features": {
+      "liq": 15444.06,
+      "vol": 204128.87,
+      "chg": 87.42,
+      "ratio": 1.3129110418830046,
+      "age": 44.55016649983724,
+      "fdv": 50503
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 33.0,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 135.0,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Trend hat gedreht"
+  },
+  {
+    "zeit": "2026-11-22T01:40:28.053950+00:00",
+    "symbol": "Mfer",
+    "addr": "9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump",
+    "pnl": -2.0278,
+    "pnl_pct": -0.4056,
+    "reason": "Stop-Loss",
+    "held_min": 74.1,
+    "peak_pct": 0.0,
+    "features": {
+      "liq": 15439.87,
+      "vol": 34213.36,
+      "chg": 29.15,
+      "ratio": 1.367117117117117,
+      "age": 149.07065989990235,
+      "fdv": 45367
+    },
+    "params": {
+      "stop_loss": -0.25,
+      "take_profit": 0.6,
+      "tp1": 0.3,
+      "tp1_fraction": 0.5,
+      "min_liquidity": 15000,
+      "min_volume_h1": 20000,
+      "min_age_min": 33.0,
+      "min_buy_sell_ratio": 1.2,
+      "min_change_h1": 10,
+      "max_change_h1": 135.0,
+      "trail_start": 0.0,
+      "trail_gap": 0.15
+    },
+    "lektion": "Trend hat gedreht"
   }
 ]

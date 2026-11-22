@@ -1,15 +1,15 @@
 {
-  "cash": 17.699580052281128,
+  "cash": 26.63076084951026,
   "positions": [
     {
       "addr": "G74SSWk4qF4BeWfyR53fVZYqdNWo9wH7UR55jF4uuxds",
       "symbol": "MANEKI",
       "entry_price": 7.576e-05,
-      "tokens": 63357.972544878554,
-      "cost": 5.0,
+      "tokens": 31678.986272439277,
+      "cost": 2.5,
       "cost0": 5.0,
       "opened": "2026-11-22T00:26:19.532876+00:00",
-      "peak": 7.576e-05,
+      "peak": 0.0001152,
       "features": {
         "liq": 18388.73,
         "vol": 48080.58,
@@ -17,43 +17,9 @@
         "ratio": 1.8236658932714618,
         "age": 64.52554825032551,
         "fdv": 73447
-      }
-    },
-    {
-      "addr": "9kaQR3dorDz4vwim3iGaoRa9amoLcUHPp6wuLHpEpump",
-      "symbol": "KAREN",
-      "entry_price": 5.277e-05,
-      "tokens": 90960.77316657192,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-22T00:26:20.009972+00:00",
-      "peak": 5.277e-05,
-      "features": {
-        "liq": 15444.06,
-        "vol": 204128.87,
-        "chg": 87.42,
-        "ratio": 1.3129110418830046,
-        "age": 44.55016649983724,
-        "fdv": 50503
-      }
-    },
-    {
-      "addr": "9tX1UpBGeNqMb1VqqzVumwzW71ybsNZFyWKYiL8Ppump",
-      "symbol": "Mfer",
-      "entry_price": 4.665e-05,
-      "tokens": 102893.89067524114,
-      "cost": 5.0,
-      "cost0": 5.0,
-      "opened": "2026-11-22T00:26:21.239578+00:00",
-      "peak": 4.665e-05,
-      "features": {
-        "liq": 15439.87,
-        "vol": 34213.36,
-        "chg": 29.15,
-        "ratio": 1.367117117117117,
-        "age": 149.07065989990235,
-        "fdv": 45367
-      }
+      },
+      "realized_pnl": 1.0034424498416046,
+      "tp1_done": true
     }
   ],
   "traded": [
@@ -84,7 +50,8 @@
   ],
   "realized_by_day": {
     "2026-11-20": -10.39699304903657,
-    "2026-11-21": -6.903426898682323
+    "2026-11-21": -6.903426898682323,
+    "2026-11-22": -3.5688192027708676
   },
   "learn": {
     "last_idx": 15,
