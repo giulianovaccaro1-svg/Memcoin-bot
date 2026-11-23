@@ -30,7 +30,7 @@ MAX_OPEN_POSITIONS = 3         # max. gleichzeitig offene Trades
 MAX_HOLD_MIN = 120             # spätestens nach 2 Stunden raus
 DAILY_LOSS_LIMIT_PCT = 0.20    # Tagesverlust-Limit: danach keine neuen Käufe
 COST_PER_SIDE = 0.04           # Slippage + Gebühren pro Kauf/Verkauf (4 %, realistisch)
-MAX_AGE_HOURS = 24
+MAX_AGE_HOURS = 72
 MAX_FDV = 5_000_000
 SCAN_INTERVAL_SEC = 60
 
@@ -43,27 +43,31 @@ ROLLBACK_TOLERANCE = 0.03      # wird der Schnitt um mehr als 3 %-Punkte schlech
 
 # Startwerte der anpassbaren Einstellungen (werden aus learned_params.json überschrieben)
 DEFAULT_P = {
-    "stop_loss": -0.25,        # bei -25 % verkaufen
-    "take_profit": 0.60,       # Rest bei +60 % verkaufen
-    "tp1": 0.30,               # Teilgewinn: bei +30 % wird ein Teil verkauft ...
-    "tp1_fraction": 0.5,       # ... und zwar die Hälfte der Position; danach Stop auf Einstand
-    "min_liquidity": 15_000,
-    "min_volume_h1": 20_000,
-    "min_age_min": 30,
-    "min_buy_sell_ratio": 1.2,
-    "min_change_h1": 10,
-    "max_change_h1": 150,
+    # Strategie 2 ("Bestaetigung statt Pump"): nur etablierte, liquide Coins, die gerade NICHT
+    # frisch gepumpt sind, aber im Aufwaertstrend liegen. Engere Stops, kleinere Ziele.
+    "stop_loss": -0.15,        # bei -15 % verkaufen
+    "take_profit": 0.35,       # Rest bei +35 % verkaufen
+    "tp1": 0.15,               # Teilgewinn: bei +15 % wird ein Teil verkauft ...
+    "tp1_fraction": 0.5,       # ... und zwar die Haelfte der Position; danach Stop auf Einstand
+    "min_liquidity": 50_000,
+    "min_volume_h1": 50_000,
+    "min_age_min": 360,        # mind. 6 Stunden alt
+    "min_buy_sell_ratio": 1.1,
+    "min_change_h1": 0,
+    "max_change_h1": 30,       # nicht kaufen, wenn schon stark gepumpt
+    "min_change_m5": 0,        # Kurs der letzten 5 Min darf nicht fallen
+    "min_change_h6": 0,        # 6h-Trend muss positiv sein
     "trail_start": 0.0,        # 0 = Trailing-Stop aus; Bot kann ihn selbst einschalten
     "trail_gap": 0.15,
 }
-# harte Grenzen: der Bot darf nie außerhalb davon landen
+# harte Grenzen: der Bot darf nie ausserhalb davon landen
 BOUNDS = {
-    "min_liquidity": (10_000, 100_000),
-    "min_volume_h1": (10_000, 150_000),
-    "min_age_min": (15, 240),
+    "min_liquidity": (30_000, 200_000),
+    "min_volume_h1": (30_000, 200_000),
+    "min_age_min": (120, 1440),
     "min_buy_sell_ratio": (1.0, 3.0),
-    "min_change_h1": (5, 60),
-    "max_change_h1": (40, 200),
+    "min_change_h1": (0, 60),
+    "max_change_h1": (15, 100),
 }
 
 # Dauerbetrieb (z. B. Railway): Spielstand liegt in DATA_DIR (dort ein dauerhaftes Laufwerk einhängen).
@@ -138,7 +142,7 @@ def load_params():
 
 def seed_data():
     """Beim ersten Start auf einem neuen Laufwerk den bisherigen Spielstand aus dem Programmordner übernehmen."""
-    if os.path.abspath(DATA_DIR) == APP_DIR:
+    if os.path.abspath(DATA_DIR) == APP_DIR or os.environ.get("SEED_OLD") != "1":
         return
     for name in ("state.json", "trades.csv", "journal.json", "learned_params.json", "lern_log.txt"):
         src, dst = os.path.join(APP_DIR, name), os.path.join(DATA_DIR, name)
@@ -250,6 +254,11 @@ def passes_filters(pair):
         return False, "Momentum passt nicht"
     if f["ratio"] is None or f["ratio"] < P["min_buy_sell_ratio"]:
         return False, "zu wenig Käufer"
+    pc = pair.get("priceChange") or {}
+    if pc.get("m5") is None or pc["m5"] < P["min_change_m5"]:
+        return False, "Kurs faellt gerade (5 Min)"
+    if pc.get("h6") is None or pc["h6"] < P["min_change_h6"]:
+        return False, "6h-Trend negativ"
     return True, "ok"
 
 
